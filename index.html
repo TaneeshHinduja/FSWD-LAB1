@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taneesh Hinduja's Portfolio</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .profile-image {
+            width: 40%; /* Reduced image size by half */
+            height: auto;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px; /* Decreased footer height */
+            position: fixed;
+            width: 90%; /* Decreased footer width */
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Contact Form Styles */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        /* Text Centering for Skills and Hobbies */
+        #skills, #hobbies {
+            text-align: center;
+        }
+
+        /* Image size adjustment for skills and hobbies */
+        #skills img, #hobbies img {
+            width: 70%; /* Reduced image size */
+            height: auto;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Taneesh Hinduja</h1>
+        <p>Second-year Computer Engineering Student at VESIT</p>
+    </header>
+
+    <section id="about-me">
+        <article>
+            <h2>About Me</h2>
+            <p>I'm a second-year Computer Engineering student studying at VESIT. This is my first lab experiment of full-stack web development. My aim is to learn complete full-stack by the end of this semester.</p>
+        </article>
+
+        <article>
+            <h2>Profile Picture</h2>
+            <img src="images/profile.jpg" alt="Taneesh Hinduja" class="profile-image">
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <article>
+            <img src="images/skills.jpg" alt="Skills">
+        </article>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>SQL and MongoDB</li>
+            <li>Data Structures and Algorithms</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <article>
+            <img src="images/hobby.jpg" alt="Hobbies">
+        </article>
+        <ul>
+            <li>Reading Novels</li>
+            <li>Playing Sports</li>
+            <li>Listening to Music</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <article class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Taneesh Hinduja. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
