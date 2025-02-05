@@ -1,58 +1,88 @@
-/* External CSS */
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    font-size: 22px;
 }
 
-/* Sections Styling */
+header h1 {
+    font-size: 2.5em;
+}
+
 section {
-    padding: 60px;
+    padding: 20px;
+    margin: 10px;
 }
 
-/* Skills and Hobbies List */
-ul {
-    list-style: none;
-    padding: 0;
+article {
+    margin-bottom: 20px;
 }
-ul li {
-    font-size: 24px;
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.profile-image, #skills img, #hobbies img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
     padding: 5px;
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/* Contact Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    margin: auto;
-}
-form label {
-    font-size: 22px;
-    margin-top: 15px;
-}
-form input, form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
-    font-size: 18px;
-    margin-top: 5px;
-    border: 2px solid #ccc;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-}
-form textarea {
-    height: 100px;
+    font-size: 1em;
 }
 
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    padding: 15px;
-    font-size: 20px;
-    margin-top: 30px;
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+#skills, #hobbies {
+    text-align: center;
 }
